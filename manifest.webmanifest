@@ -1,0 +1,20 @@
+{
+  "id": "/QCC-Konfigurator/",
+  "name": "QCC Blech-Konfigurator",
+  "short_name": "QCC Konfigurator",
+  "description": "QCC Blech-Konfigurator Kundenversion",
+  "lang": "de",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f4f3f0",
+  "theme_color": "#b88a30",
+  "icons": [
+    {
+      "src": "./qcc-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
