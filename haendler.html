@@ -56,7 +56,7 @@ let exiting=false;
 function out(){if(exiting)return;exiting=true;try{sessionStorage.removeItem(S)}catch(e){}
 try{const q=indexedDB.open(D,1);q.onsuccess=()=>{const d=q.result;try{const t=d.transaction('keys','readwrite');t.objectStore('keys').delete(ID);t.oncomplete=()=>d.close()}catch(e){d.close()}}}catch(e){}
 location.replace(location.pathname+location.search);}
-function check(){const n=Date.now();if(n>EXPIRES||n+10000<ISSUED)out()}
+function check(){const n=Date.now();let t=null;try{t=JSON.parse(sessionStorage.getItem(S)||'null')}catch(e){}if(!t||t.id!==ID||n>EXPIRES||n+10000<ISSUED)out()}
 const btn=document.getElementById('qcc-session-logout');if(btn)btn.addEventListener('click',out);
 setInterval(check,10000);window.addEventListener('pageshow',check);document.addEventListener('visibilitychange',check);check();
 })();`;
@@ -67,9 +67,15 @@ setInterval(check,10000);window.addEventListener('pageshow',check);document.addE
 }
 function launchProgram(source,session){
  const addon=logoutMarkup(session.id,session.issued,session.expires);
- const html=/<\/body\s*>/i.test(source)?source.replace(/<\/body\s*>/i,addon+'</body>'):source+addon;
+ // Niemals das erste </body> verwenden: HTML-Strings innerhalb des Konfigurators enthalten ebenfalls dieses Tag.
+ let insertAt=-1;
+ const closing=/<\/body\s*>/gi;
+ let match;
+ while((match=closing.exec(source))!==null)insertAt=match.index;
+ const html=insertAt>=0?source.slice(0,insertAt)+addon+source.slice(insertAt):source+addon;
  document.open();document.write(html);document.close();
 }
+
 async function issueSession(bits){
  const now=Date.now();const id=bytesB64(crypto.getRandomValues(new Uint8Array(28)));
  const sessionKey=await crypto.subtle.generateKey({name:'AES-GCM',length:256},false,['encrypt','decrypt']);
