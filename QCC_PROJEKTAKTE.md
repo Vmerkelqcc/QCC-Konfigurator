@@ -55,6 +55,10 @@ Später sind Anmeldungen, Lizenzen und eine Verlagerung vertraulicher Preisberec
 - **Kein automatischer Dauerbetrieb:** ChatGPT kann bei konkreten Sitzungen helfen, überwacht den QCC jedoch nicht ohne ausdrücklich eingerichtete Überwachung.
 - **Protokoll:** Nach relevanten Änderungen Versionsstand, Ergebnis, offene Fehler, nächste Schritte hier knapp aktualisieren. Die jeweils aktuelle ausführbare HTML-Datei bleibt die maßgebliche technische Quelle.
 
+## 5a. Verbindliche Upload-Arbeitsanweisung
+
+Für neue verschlüsselte Händler-Veröffentlichungen gilt zusätzlich die [QCC-Upload-Arbeitsanweisung](./QCC_UPLOAD_ARBEITSANWEISUNG.md). Sie enthält die verbindlichen Regeln für Passwortabfrage im jeweiligen Chat, AES-256-GCM/PBKDF2-SHA256, die tabgebundene maximale Acht-Stunden-Freigabe, Abmelden, Schutz vor falscher HTML-Einfügeposition, Tests vor und nach dem Upload, Sicherung und GitHub-Rückweg. **Kein Upload ohne nachgewiesene erforderliche Prüfungen.** Diese Regeln gelten für Browser und Desktop-App, soweit dort die nötigen Werkzeuge tatsächlich verfügbar sind. Niemals Passwort oder geheime Codeinhalte dokumentieren.
+
 ## 6. Offene Aufgaben
 
 1. Vorhandene Entwicklungschats / Zusammenfassungen nach weiteren **bestätigten** Projektentscheidungen und offenen Fehlern durchsehen; Akte danach aktualisieren.
