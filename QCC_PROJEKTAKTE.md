@@ -12,12 +12,13 @@ QCC ist ein bereits bestehender Konfigurator mit Eingaben, Zeichnungen, Berechnu
 
 Der Betreiber hat keine Programmiererfahrung und benötigt einen nachvollziehbaren, möglichst wartungsarmen Arbeitsablauf. Änderungen sollen nicht dazu führen, dass zuvor funktionierende Bereiche unbemerkt kaputtgehen.
 
-## 2. Bestätigter Entwicklungsstand
+## 2. Bestätigter Entwicklungs- und Veröffentlichungsstand
 
-- **Aktuell bestätigte QCC-Version: 8.69.** Am 18.11.2026 hat der Betreiber bestätigt, dass der neueste Stand auf GitHub zugleich sein neuester lokaler Stand ist.
-- Letzte zuvor festgestellte Programmänderung im Repository: 17.11.2026, Commit `ad5b0aa76410f503c3949b2b49d94b49aaa9deec`, Datei `haendler.html`. Dieser Commit dient der Zuordnung von **QCC 8.69**; nachfolgende reine Dokumentations-Commits ändern die Programmversion nicht.
-- Das Repository ist derzeit öffentlich. Die verfügbare GitHub-Verbindung besaß beim Anlegen dieser Akte Schreibrechte.
-- **Nicht als erledigt annehmen:** Vollständige Funktionsprüfung, automatisierte Regressionstests, Server-Migration und Lizenzverwaltung sind nicht durch diese Akte bestätigt.
+- **QCC 8.71** ist seit dem 18.11.2026 auf der bestehenden [Händlerseite](https://vmerkelqcc.github.io/QCC-Konfigurator/haendler.html) veröffentlicht.
+- Die geschützte Datei `haendler.html` liegt im [Veröffentlichungscommit `409556950eb0`](https://github.com/Vmerkelqcc/QCC-Konfigurator/commit/409556950eb0f851b6626827ce7af230441a3680). Der [vorherige Stand 8.69](https://github.com/Vmerkelqcc/QCC-Konfigurator/commit/1e4dd70479efababeb8c5bbf2e45b8d25bf7be98) ist über die GitHub-Historie wiederherstellbar.
+- Änderungen in 8.71 betreffen die Mauerabdeckung, Schornstein, Flächenrechner, Giebel und Gauben sowie die PDF-Ausgabe.
+- Die geschützte Datei wurde vor dem Upload in Chrome unter anderem mit Anmeldung, Tab-Duplikat, Wiederherstellung, Abmelden, zeitlichem Ablauf und PDF-Export geprüft. Am Live-Link wurden Dateistand, Anmeldung, Start des Konfigurators, Reload und Abmelden bestätigt.
+- Automatisierte Regressionstests werden weiter ausgebaut. Server-Migration und Lizenzverwaltung stehen noch aus.
 
 ## 3. Aktuelle Priorität: Stabilisierung
 
