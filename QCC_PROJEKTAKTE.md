@@ -1,0 +1,73 @@
+# QCC – zentrale Projektakte
+
+**Stand der Projektakte:** 18.11.2026  
+**Status:** Arbeitsgrundlage für neue ChatGPT-Chats; keine technische Abnahme  
+**Repository:** `Vmerkelqcc/QCC-Konfigurator` (öffentlich)
+
+> **Wichtig:** Diese Datei enthält ausschließlich nichtvertrauliche Projektinformationen. Keine geheimen Preisformeln, internen Kalkulationsregeln, Kundendaten, Zugangsdaten, Schlüssel oder Sicherheitsdetails eintragen. Vertrauliche technische Dokumentation gehört später an einen geschützten Ort.
+
+## 1. Ziel und Grundsätze
+
+QCC ist ein bereits bestehender Konfigurator mit Eingaben, Zeichnungen, Berechnungen und PDF-Ausgabe. Er soll langfristig an Geschäftskunden bzw. Großhändler vermarktet werden. **Kein Neubau:** Vorhandene Funktionen sollen erhalten und gezielt abgesichert und erweitert werden.
+
+Der Betreiber hat keine Programmiererfahrung und benötigt einen nachvollziehbaren, möglichst wartungsarmen Arbeitsablauf. Änderungen sollen nicht dazu führen, dass zuvor funktionierende Bereiche unbemerkt kaputtgehen.
+
+## 2. Bestätigter Entwicklungsstand
+
+- **Aktuell bestätigte QCC-Version: 8.69.** Am 18.11.2026 hat der Betreiber bestätigt, dass der neueste Stand auf GitHub zugleich sein neuester lokaler Stand ist.
+- Letzte zuvor festgestellte Programmänderung im Repository: 17.11.2026, Commit `ad5b0aa76410f503c3949b2b49d94b49aaa9deec`, Datei `haendler.html`. Dieser Commit dient der Zuordnung von **QCC 8.69**; nachfolgende reine Dokumentations-Commits ändern die Programmversion nicht.
+- Das Repository ist derzeit öffentlich. Die verfügbare GitHub-Verbindung besaß beim Anlegen dieser Akte Schreibrechte.
+- **Nicht als erledigt annehmen:** Vollständige Funktionsprüfung, automatisierte Regressionstests, Server-Migration und Lizenzverwaltung sind nicht durch diese Akte bestätigt.
+
+## 3. Aktuelle Priorität: Stabilisierung
+
+Vor neuen Funktionen werden bekannte Fehler in bestehenden Programmabläufen und in PDF-Ausgaben behoben. Es gibt noch Probleme, deren genaue Liste und Reproduktionsschritte aus dem aktuellen Code bzw. den bisherigen Entwicklungschats erhoben werden müssen.
+
+**Nächster technischer Schwerpunkt:** Ein separates automatisiertes Testsystem, das bereits funktionierende Abläufe nach jeder Änderung kontrolliert (Regressionstests). Dazu gehören – schrittweise und mit verifizierten Soll-Ergebnissen – Produktauswahl, Eingaben, Rechenergebnisse, Zeichnungen, PDF-Inhalte und die tatsächlich veröffentlichte geschützte HTML-Version. Ein Werkzeug wie Playwright ist eine Möglichkeit, aber noch keine beschlossene Implementierung.
+
+Alte fehlerhafte Ergebnisse dürfen nicht unkritisch als Sollwerte übernommen werden.
+
+## 4. Geplante Erweiterungen (noch nicht implementiert)
+
+### Geführte Hilfe für Einsteiger
+
+Ein einfacher **regelbasierter** Assistent im bestehenden QCC, zunächst für Gauben:
+1. Nutzer wählt ein Vorhaben, beispielsweise Gaube und Gaubenform.
+2. Der Guide markiert jeweils das benötigte vorhandene Eingabefeld und erläutert es knapp.
+3. Nach gültiger Eingabe geht er zum nächsten Schritt; Zurück/Beenden bleiben möglich.
+4. Nach Maßen und Konturen erklärt er relevante Leistenpositionen und zeigt nur fachlich begründete, situationsabhängige Profilvorschläge.
+5. Abschlusskontrolle und Übergang zur vorhandenen Berechnung/PDF-Ausgabe.
+
+Keine künstliche Intelligenz erforderlich; die eigentlichen Rechenfunktionen sollen davon unabhängig bleiben. Umsetzung erst nach der Stabilisierung.
+
+### Geplantes kommerzielles System
+
+Später sind Anmeldungen, Lizenzen und eine Verlagerung vertraulicher Preisberechnungen auf einen Server vorgesehen; **Supabase** ist als mögliche Plattform geplant. Details, Aufwand und Migration sind noch zu prüfen. GitHub kann dabei weiterhin der Code- und Versionsverwaltung dienen; es muss nicht dauerhaft die gesamte Anwendung ausliefern.
+
+## 5. Feste Arbeitsregeln für Browser und Desktop-App
+
+- **Vor jeder Codeänderung:** aktuelle Version, betroffene Dateien und funktionierende Ausgangsbasis feststellen. Nicht auf ältere Chat-Annahmen zurückfallen.
+- **Sicherung:** Vor riskanten Eingriffen einen wiederherstellbaren Stand erhalten; Änderungen möglichst klein halten.
+- **Fehlerursachen beheben,** statt immer weitere Reparatur-Schnipsel über alte Lösungen zu schichten.
+- **Prüfen vor Veröffentlichen:** Erst geeignete Tests ausführen, bekannte Abweichungen offenlegen und danach freigeben; keine ungetesteten Änderungen als fehlerfrei bezeichnen.
+- **GitHub-Arbeitsweise:** Wenn im jeweiligen Chat/Modus eine autorisierte GitHub-Schreibfunktion vorhanden ist, soll ChatGPT die vereinbarten Änderungen möglichst selbst übertragen. Wenn nicht, offen benennen, welche Funktion oder Berechtigung fehlt.
+- **Browser/Desktop:** Dieselbe Projektakte und derselbe Versionsstand dienen als Grundlage. Ein Dokument kann fehlende Desktop-App-Funktionen nicht freischalten; Unterschiede der verfügbaren Werkzeuge müssen gesondert geprüft werden.
+- **Kein automatischer Dauerbetrieb:** ChatGPT kann bei konkreten Sitzungen helfen, überwacht den QCC jedoch nicht ohne ausdrücklich eingerichtete Überwachung.
+- **Protokoll:** Nach relevanten Änderungen Versionsstand, Ergebnis, offene Fehler, nächste Schritte hier knapp aktualisieren. Die jeweils aktuelle ausführbare HTML-Datei bleibt die maßgebliche technische Quelle.
+
+## 6. Offene Aufgaben
+
+1. Vorhandene Entwicklungschats / Zusammenfassungen nach weiteren **bestätigten** Projektentscheidungen und offenen Fehlern durchsehen; Akte danach aktualisieren.
+2. Neueste HTML-Datei und tatsächliches Verhalten prüfen; Fehler nach Bereich, Reproduktionsschritten und Priorität erfassen.
+3. Regressionstests zunächst für einige verlässlich funktionierende Kernabläufe anlegen; Tests nach Fehlerbehebungen ausbauen.
+4. Unterschiede bei GitHub-Schreibzugriff zwischen Browser und Desktop-App anhand des verwendeten Arbeitsmodus und der Verbindung untersuchen.
+5. Erst danach den geführten Gauben-Assistenten planen und umsetzen.
+6. Später private Ablage für vertrauliche Unterlagen sowie Architektur der Serverberechnungen und Lizenzierung entscheiden.
+
+## 7. Übergabe an einen neuen Chat
+
+Für einen neuen Chat möglichst diesen Einstieg verwenden:
+
+> Wir arbeiten am bestehenden QCC-Konfigurator. Lies bitte zuerst die aktuelle Datei `QCC_PROJEKTAKTE.md` im GitHub-Repository `Vmerkelqcc/QCC-Konfigurator`, prüfe den neuesten Code- und Versionsstand und frage nur nach fehlenden entscheidenden Informationen. Nichts auf Grundlage veralteter Versionen überschreiben. Vorrang: bestehende Fehler beheben und Regressionstests aufbauen; neue Funktionen erst danach. Beachte, dass das Repository öffentlich ist.
+
+**Hinweis:** Nicht jeder Chat bzw. jede Desktop-App-Sitzung hat automatisch GitHub-Zugriff. Dann muss die Akte über eine verfügbare Verbindung gelesen oder manuell bereitgestellt werden.
