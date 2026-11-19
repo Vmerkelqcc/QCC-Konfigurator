@@ -14,7 +14,11 @@ Der Betreiber hat keine Programmiererfahrung und benötigt einen nachvollziehbar
 
 ## 2. Bestätigter Entwicklungs- und Veröffentlichungsstand
 
-- **QCC 8.78** wurde am 19.11.2026 auf der bestehenden Händlerseite bereitgestellt. [Händlerseite](https://vmerkelqcc.github.io/QCC-Konfigurator/haendler.html) · [Veröffentlichungscommit 8.78](https://github.com/Vmerkelqcc/QCC-Konfigurator/commit/6340c779c34b590d7158da30c54ea556ac6a7765)
+- **QCC 8.79** wurde am 19.11.2026 auf der bestehenden Händlerseite bereitgestellt. [Händlerseite](https://vmerkelqcc.github.io/QCC-Konfigurator/haendler.html) · [Veröffentlichungscommit 8.79](https://github.com/Vmerkelqcc/QCC-Konfigurator/commit/1c7455e0ec11def58fa3f6cbfaa94c1c9aac27d3)
+- Die gemeinsame Projektmappe nimmt jetzt auch Kantteile auf. Mauerabdeckung und Kantteile zeigen beim Zeichnen am nächstgelegenen Konturende eine gestrichelte Vorschau. Bei der Mauerabdeckung stehen „Zeichnen“ und „Bearbeiten“ für Profil und Draufsicht zur Verfügung. Bei Giebelfenstern bleiben die Maße zunächst eingeklappt. Sichtbar sind zwei Abstände nach oben und einer zur unteren Giebelkante.
+- Die geschützte Datei hat 16 Browserprüfungen bestanden, einschließlich Einzelpreisprüfung, Zeichnen, Giebelfenster und gemeinsamer Projektmappe. Am Live-Link wurden Dateistand, Anmeldung, Start des Konfigurators, Neuladen und Abmelden bestätigt.
+
+- **Vorheriger veröffentlichter Stand 8.78** wurde am 19.11.2026 auf der bestehenden Händlerseite bereitgestellt. [Händlerseite](https://vmerkelqcc.github.io/QCC-Konfigurator/haendler.html) · [Veröffentlichungscommit 8.78](https://github.com/Vmerkelqcc/QCC-Konfigurator/commit/6340c779c34b590d7158da30c54ea556ac6a7765)
 - Der Stand enthält den erweiterten Kantteilrechner mit Sammelbestellung, eigenständig aufklappbarer Einzelpreisprüfung und Kunden-PDF. Schritt-für-Schritt-Hilfen stehen bei Mauerabdeckung und Kantteilen zur Verfügung. Die Flächenrechner enthalten unter anderem die Korrekturen am Fugenkreuz und an der Falzeinteilung.
 - Die geschützte Fassung hat 13 Browserprüfungen bestanden. Dazu gehörten Anmeldung, Sitzungsdauer, Neuladen, Zurück und Vorwärts, Tab-Duplikat, Wiederherstellung, Abmelden sowie repräsentative Preis- und PDF-Prüfungen. Die ausgelieferte Händlerseite wurde anschließend im Browser auf Dateistand, Anmeldung, Start, Neuladen und Abmelden geprüft.
 
