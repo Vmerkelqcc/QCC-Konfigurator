@@ -1,6 +1,6 @@
 # QCC – zentrale Projektakte
 
-**Stand der Projektakte:** 19.11.2026  
+**Stand der Projektakte:** 22.11.2026<br>
 **Status:** Arbeitsgrundlage für neue ChatGPT-Chats; keine technische Abnahme  
 **Repository:** `Vmerkelqcc/QCC-Konfigurator` (öffentlich)
 
@@ -14,7 +14,10 @@ Der Betreiber hat keine Programmiererfahrung und benötigt einen nachvollziehbar
 
 ## 2. Bestätigter Entwicklungs- und Veröffentlichungsstand
 
-- **QCC 8.79** wurde am 19.11.2026 auf der bestehenden Händlerseite bereitgestellt. [Händlerseite](https://vmerkelqcc.github.io/QCC-Konfigurator/haendler.html) · [Veröffentlichungscommit 8.79](https://github.com/Vmerkelqcc/QCC-Konfigurator/commit/1c7455e0ec11def58fa3f6cbfaa94c1c9aac27d3)
+- **QCC 8.79, freigegebener Teststand 22** wurde am 22.11.2026 an der bestehenden Händleradresse veröffentlicht. Die Aktualisierung umfasst unter anderem Kantteile mit Gruppenauswahl und Konturanschlag, die zugeordneten Excel-Kilopreise, kompakte Sammel-PDFs mit bemaßten Profilskizzen sowie Zoom, Verschieben und gemeinsame Längeneingabe in der Draufsicht der Mauerabdeckung. Zentimetermaße im PDF werden mit höchstens einer Nachkommastelle angezeigt. [Händlerseite](https://vmerkelqcc.github.io/QCC-Konfigurator/haendler.html) · [Veröffentlichungscommit](https://github.com/Vmerkelqcc/QCC-Konfigurator/commit/dbeab4349d4e9bab97a9b9dc58bb623539794493)
+- Vor dem Upload wurden die verschlüsselte Datei und ihre HTML-Struktur sowie die Browserabläufe für Anmeldung, Neuladen, Navigation, kopierte Sitzungsdaten in einem zweiten Tab, Browser-Wiederherstellung, Zeitablauf und Abmelden geprüft. Kantteilzeichnung, eine Excel-Preisreferenz und ein PDF mit zwei Positionen wurden geprüft. Die Händleradresse lieferte bytegenau die geprüfte Datei aus. Anmeldung, Neuladen und Abmelden wurden mit dieser ausgelieferten Datei in Chromium bestätigt.
+
+- **Vorheriger veröffentlichter Stand 8.79** wurde am 19.11.2026 auf der bestehenden Händlerseite bereitgestellt. [Händlerseite](https://vmerkelqcc.github.io/QCC-Konfigurator/haendler.html) · [Veröffentlichungscommit 8.79](https://github.com/Vmerkelqcc/QCC-Konfigurator/commit/1c7455e0ec11def58fa3f6cbfaa94c1c9aac27d3)
 - Die gemeinsame Projektmappe nimmt jetzt auch Kantteile auf. Mauerabdeckung und Kantteile zeigen beim Zeichnen am nächstgelegenen Konturende eine gestrichelte Vorschau. Bei der Mauerabdeckung stehen „Zeichnen“ und „Bearbeiten“ für Profil und Draufsicht zur Verfügung. Bei Giebelfenstern bleiben die Maße zunächst eingeklappt. Sichtbar sind zwei Abstände nach oben und einer zur unteren Giebelkante.
 - Die geschützte Datei hat 16 Browserprüfungen bestanden, einschließlich Einzelpreisprüfung, Zeichnen, Giebelfenster und gemeinsamer Projektmappe. Am Live-Link wurden Dateistand, Anmeldung, Start des Konfigurators, Neuladen und Abmelden bestätigt.
 
